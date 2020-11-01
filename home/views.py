@@ -5,6 +5,7 @@ from .models import DoneItem
 from subprocess import check_output
 import os
 import time
+import psutil 
 
 def homeView(request):
 	all_home_items = HomeItem.objects.all()
